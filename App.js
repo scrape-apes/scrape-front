@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import Auth from './lib/auth.js';
 import Search from './lib/search.js';
+import Details from './lib/details.js';
 
 const Stack = createStackNavigator();
 
@@ -17,6 +18,9 @@ export default function App() {
         <Stack.Screen
           name="Search"
           component={Search} />
+        <Stack.Screen
+          name="Details"
+          component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
   );
