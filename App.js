@@ -6,10 +6,12 @@ import Auth from './lib/auth.js';
 import Search from './lib/search.js';
 import Details from './lib/details.js';
 
+
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
+
     // Defines the navigable components of the application
     <NavigationContainer>
       <Stack.Navigator>
@@ -23,6 +25,7 @@ export default function App() {
         <Stack.Screen
           name="Details"
           component={Details} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
