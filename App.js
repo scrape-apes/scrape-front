@@ -10,8 +10,10 @@ const Stack = createStackNavigator();
 
 export default function App() {
   return (
+    // Defines the navigable components of the application
     <NavigationContainer>
       <Stack.Navigator>
+        {/* Each Stack.Screen creates a new page that we can route to, defines the Title of the Page and which compoenent it is */}
         <Stack.Screen
           name="Login/Sign up"
           component={Auth} />
