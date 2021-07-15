@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import Auth from './lib/auth.js';
 import Search from './lib/search.js';
 import Details from './lib/details.js';
+import Bot from './lib/bot.js';
 
 const Stack = createStackNavigator();
 
@@ -29,6 +30,9 @@ export default function App() {
         <Stack.Screen
           name="Details"
           component={Details} />
+          <Stack.Screen 
+            name="Bot"
+            component={Bot}/>
 
       </Stack.Navigator>
     </NavigationContainer>
