@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import React, { useState } from 'react';
 import Auth from './lib/auth.js'
 import Home from './lib/home.js';
+import Search from './lib/search.js';
 
 const Stack = createStackNavigator();
 
