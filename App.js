@@ -10,9 +10,6 @@ import Details from './lib/details.js';
 const Stack = createStackNavigator();
 
 export default function App() {
-
-  const [loading, setLoading] = useState(false);
-
   return (
 
     // Defines the navigable components of the application
