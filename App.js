@@ -4,7 +4,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import React, { useState } from 'react';
 import Auth from './lib/auth.js'
 import Home from './lib/home.js';
-import Search from './lib/search.js';
 
 const Stack = createStackNavigator();
 
@@ -15,11 +14,13 @@ export default function App() {
       <Stack.Navigator>
         {/* Each Stack.Screen creates a new page that we can route to, defines the Title of the Page and which component it is */}
         <Stack.Screen
-          name="Login/Sign up"
-          component={Auth} />
+          name="Auth"
+          component={Auth}
+          options={{ headerShown: false }} />
         <Stack.Screen
           name="Home"
-          component={Home} />
+          component={Home}
+          options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
