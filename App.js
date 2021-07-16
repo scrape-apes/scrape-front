@@ -1,10 +1,9 @@
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import React, { useState } from 'react';
+import React from 'react';
 import Auth from './lib/auth.js'
 import Home from './lib/home.js';
-import Search from './lib/search.js';
 
 const Stack = createStackNavigator();
 
